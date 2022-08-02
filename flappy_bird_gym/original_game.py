@@ -6,13 +6,14 @@ made on the code in order to improve readability.
 """
 
 from itertools import cycle
+from pathlib import Path
 import random
 import sys
 
 import pygame
 from pygame.locals import *
 
-ASSETS_DIR = "./flappy_bird_gym/assets"
+ASSETS_DIR = str(Path(__file__).parents[1] / "flappy_bird_gym/assets")
 
 FPS = 30
 SCREEN_WIDTH = 288
